@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \":*)",
+      "Bash(powershell -Command \"\n$cssUrl = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'\n$jsUrl  = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'\n$base   = 'C:\\\\Users\\\\Max\\\\Desktop\\\\csapp\\\\2324802010287_NgoNguyenDucManh_2324802010238_NguyenQuangHuy\\\\ASC.Web\\\\wwwroot'\n\nNew-Item -ItemType Directory -Force -Path \\\\\"$base\\\\css\\\\\" | Out-Null\nNew-Item -ItemType Directory -Force -Path \\\\\"$base\\\\js\\\\\"  | Out-Null\nNew-Item -ItemType Directory -Force -Path \\\\\"$base\\\\images\\\\\" | Out-Null\nNew-Item -ItemType Directory -Force -Path \\\\\"$base\\\\fonts\\\\roboto\\\\\" | Out-Null\n\nInvoke-WebRequest -Uri $cssUrl -OutFile \\\\\"$base\\\\css\\\\materialize.css\\\\\"\nInvoke-WebRequest -Uri $jsUrl  -OutFile \\\\\"$base\\\\js\\\\materialize.min.js\\\\\"\nWrite-Host 'Done'\n\")",
+      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -Command \"Invoke-WebRequest -Uri ''https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'' -OutFile ''css\\\\materialize.css''; Invoke-WebRequest -Uri ''https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'' -OutFile ''js\\\\materialize.min.js''; Write-Host Done\")",
+      "Bash(cd:*)",
+      "Bash(dotnet restore:*)",
+      "Bash(dotnet build:*)"
+    ]
+  }
+}
